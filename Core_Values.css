@@ -1,0 +1,317 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*start footer*/
+#site-info {
+	height: 3em;
+	width: 100%;
+	line-height: 3;
+	text-align: center;
+	background: #080808;
+	position: relative;
+	color: #fff;
+	left: 0;
+	bottom: 0;
+}
+
+body#checkout-page #site-info {
+	position: static;
+}
+/*End footer*/
+.navColour{
+  position: absolute;
+  width: 100vw;
+  height: 40px;
+  background-color: var(--mainColour);
+  margin-top: 20px;
+}
+
+.title h2{
+  text-align: center;
+  white-space: nowrap;
+}
+.headerColour{
+  position: absolute;
+  top: 62px;
+  width: 100vw;
+  height: 220px;
+  background-color: var(--secondaryColour);
+  margin-top: 20px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  margin-top: 260px;
+  margin-left: 30px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.main{
+margin-top: 20px;
+margin-left: 20px;
+margin-right: 20px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+padding-bottom: 20px;
+}
+
+.col1{
+  border: solid 2px black;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.col1 p{
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.col1 img{
+  padding: 10px;
+}
+
+.space{
+
+}
+
+.timelineText p{
+  text-align: left;
+}
+
+.timelineText h3{
+  margin-bottom: 5px;
+}
+
+.right{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.border{
+    border-right: solid 2px black;
+}
+.info{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "first second";
+  grid-gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main img{
+  border-radius: 10px;
+}
+
+footer{
+
+}
+
+
+
+
+body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+:root{
+  --mainColour: #18157A;
+  --secondaryColour: #DED9D9;
+  --accentColour: #FF249A;
+}
+
+img{
+  max-width: 100%;
+}
+
+.navBar{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  z-index: 10;
+}
+
+nav{
+  flex:1;
+  text-align: right;
+}
+
+nav ul{
+  display: inline-block;
+  list-style: none;
+
+}
+
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+
+}
+
+nav ul li p{
+  color: white;
+}
+
+nav ul li a{
+  text-decoration: none;
+  z-index: 17;
+  color: white;
+}
+
+.picture_items a{
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: var(--secondaryColour);
+  color: black;
+}
+
+#logoImage{
+  height: 40px;
+  z-index: 14;
+}
+
+.container{
+  position: relative;
+  max-width: 1300px;
+  margin:auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  z-index: 2000;
+}
+
+.headerColour .text *{
+  text-align: center;
+}
+
+.text h1{
+  margin-bottom: 10px;
+}
+#middle{
+  /* centre an element in a div vertically and horizontally
+  https://www.w3schools.com/howto/howto_css_center-vertical.asp*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.menu_icon{
+  display: none;
+}
+
+#services_title{
+  text-align: center;
+}
+
+#number{
+  margin-bottom: 30px;
+}
+
+.contact-info img{
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1100px){
+
+
+  nav ul{
+    position: absolute;;
+    top: 70px;
+    left: 0;
+    background: #333;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  nav ul li{
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a{
+    color: white;
+  }
+
+  .menu_icon{
+    display: block;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .inputs{
+    flex-basis: 40%
+  }
+
+  .contact-info{
+    flex-basis: 30%;
+  }
+
+  footer{
+
+  }
+}
+
+@media only screen and (max-width: 640px){
+.cart_info p{
+  display: none;
+}
+
+.pic1{
+  grid-area: first;
+  background-image: url(images/history.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 190px;
+}
+
+.pic2{
+  grid-area: second;
+  background-image: url(images/eco_about.svg);
+  background-size: 102%;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 190px;
+  justify-self: right;
+}
+
+.main{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
+
+.col1 p{
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.col1 img{
+  padding: 10px;
+}
+
+}

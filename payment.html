@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="payment.css">
+  <title>Payment</title>
+</head>
+<body>
+  <div class="overallContainer">
+    <div class="navColour"></div>
+    <div class="container">
+        <div class="navBar">
+          <div class="logo">
+          <a href="index.html"><img src="images/abio fashions final logo.png" id="logoImage" alt=""></a>
+          </div>
+          <nav>
+            <ul id="MenuItem">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="collections.html">Collections</a></li>
+              <li><a href="services2.html">Services</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="sign_up.html">SIGN UP</a></li>
+              <li><p>|</p></li>
+              <li><a href="sign_up.html">SIGN IN</a></li>
+            </ul>
+          </nav>
+          <a href = "cart.html"><img src="images/shopping_cart.svg" id="cart" alt=""></a>
+          <img src="images/menu.svg" id="cart" alt="" class="menu_icon" onclick="menuToggle()">
+        </div>
+
+        <div class="row1">
+          <div class="col1">
+            <p id="title">Choose Payment Option</p>
+          </div>
+        </div>
+
+
+      <div class="item2">
+        <div class="profile passed connect">
+              <img src="images/profile.svg" alt="">
+        </div>
+
+        <div class="money passed connect">
+              <img src="images/atm.svg" alt="">
+        </div>
+
+        <div class="dollar waiting connect">
+              <img src="images/dollar-sign_2.svg" alt="">
+        </div>
+
+      </div>
+
+      <div class="row65">
+        <div class="filler">
+          <div class="row17">
+            <div class="col17 first remove">
+              <p>We Accept:</p>
+            </div>
+            <div class="col17 second">
+              <img src="images/papal mastercard.svg" alt="" id="card_details">
+            </div>
+          </div>
+
+          <div class="row17">
+            <div class="col17 remove">
+              <p id="acceptText">Debit Card <span id="vr">|</span>:</p>
+            </div>
+            <div class="col17">
+              <input type="text" name="" value="" class="entry" placeholder="  Card Number">
+            </div>
+          </div>
+
+          <div class="row17">
+            <div class="col17 remove">
+              <p>Credit Card <span></span></p>
+            </div>
+            <div class="col17">
+              <input type="text" name="" value="" class="entry" placeholder="  Name On Card">
+            </div>
+          </div>
+
+          <div class="row17">
+            <div class="col19">
+              <datalist class="form-control" id="select">
+              <option value="1"/>
+              <option value="2"/>
+              <option value="3"/>
+              </datalist>
+                <input list="select" name="select" value="" class="entry1" placeholder="  Expiry Month">
+                <input type="text" name="" value="" class="entry1" placeholder="  Expiry Year">
+            </div>
+          </div>
+
+          <div class="row17">
+            <div class="col19">
+                <input type="text" name="" value="" class="entry3" placeholder="  CVV">
+            </div>
+          </div>
+
+          <div class="row17 desktop">
+            <div class="col19">
+                <button type="button" name="button" class="mainButton">Proceed To Payment</button>
+            </div>
+          </div>
+        </div>
+        <div class="option2 first">
+          <div class="summary">
+            <p class="heading">ORDER SUMMARY</p>
+            <p>Phone No:</p>
+            <p>073 936 554</p>
+            <br> <br> <br> <br> <br> <br> <br> <br>
+            <p>Delivers To</p>
+            <p>No. 8 Street Jouhn Close</p>
+          </div>
+        </div>
+
+        <div class="optionMobile">
+          <div class="summary2">
+            <p class="heading">ORDER SUMMARY</p>
+            <p>Phone No: <span>073 936 554</span></p>
+            <p>Delivers To: <span>No. 8 Street Jouhn Close</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row17 mobile">
+        <div class="col19">
+            <button type="button" name="button" class="mainButton">Proceed To Payment</button>
+        </div>
+      </div>
+
+        </div>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    var menuItems = document.getElementById("MenuItem");
+
+    menuItems.style.maxHeight = "0px";
+
+    function menuToggle(){
+      if(menuItems.style.maxHeight == "0px"){
+        menuItems.style.maxHeight = "200px";
+      } else {
+        menuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+<footer id="site-info">
+  Copyright &copy; Winery
+  <a id = "credit" href="credits.html">Credit</a>
+</footer>
+</html>

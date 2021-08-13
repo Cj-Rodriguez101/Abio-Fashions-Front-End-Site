@@ -1,0 +1,304 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*start footer*/
+#site-info {
+	height: 3em;
+	width: 100%;
+	line-height: 3;
+	text-align: center;
+	background: #080808;
+	position: relative;
+	color: #fff;
+	left: 0;
+	bottom: 0;
+}
+
+body#checkout-page #site-info {
+	position: static;
+}
+/*End footer*/
+.navColour{
+  position: absolute;
+  width: 100vw;
+  height: 40px;
+  background-color: var(--mainColour);
+  margin-top: 20px;
+}
+
+.headerColour{
+  position: absolute;
+  top: 62px;
+  width: 100vw;
+  height: 220px;
+  background-color: var(--secondaryColour);
+  margin-top: 20px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+:root{
+  --mainColour: #18157A;
+  --secondaryColour: #DED9D9;
+  --accentColour: #FF249A;
+}
+
+img{
+  max-width: 100%;
+}
+
+.navBar{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  z-index: 10;
+}
+
+nav{
+  flex:1;
+  text-align: right;
+}
+
+nav ul{
+  display: inline-block;
+  list-style: none;
+
+}
+
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+
+}
+
+nav ul li p{
+  color: white;
+}
+
+nav ul li a{
+  text-decoration: none;
+  z-index: 17;
+  color: white;
+}
+
+.picture_items a{
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: var(--secondaryColour);
+  color: black;
+}
+
+#logoImage{
+  height: 40px;
+  z-index: 14;
+}
+
+.container{
+  position: relative;
+  max-width: 1300px;
+  margin:auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  z-index: 2000;
+}
+
+.Welcome{
+  margin-top: 260px;
+  margin-left: 30px;
+  margin-right: 20px;
+  display: flex;
+}
+
+.welcomeText{
+  flex: 2;
+}
+
+.welcomeText *{
+
+}
+
+.pictureSection{
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+/* .pictureSection{
+  align-self: center;
+  flex-grow: 0;
+
+} */
+
+.pictureSection img{
+  width: 260px;
+  height: 240px;
+  border-radius: 10px;
+}
+
+.choose_us{
+  margin-top: 20px;
+}
+
+.choose_us *{
+    text-align: center;
+}
+
+.points_overall{
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 20px;
+  grid-row-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.points_overall h2{
+  text-align: center;
+}
+
+.point_picture{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.first_point {
+margin-left: 30px;
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ border-style: solid;
+ border-color: var(--mainColour);
+ border-width: 10px;
+ background-image: url(images/eco-friendly.png);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 60%;
+}
+
+.second_point {
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ border-style: solid;
+ border-color: var(--mainColour);
+ border-width: 10px;
+ background-image: url(images/Money.png);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 60%;
+
+}
+
+.third_point {
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ border-style: solid;
+ border-color: var(--mainColour);
+ border-width: 10px;
+ background-image: url(images/Verified_Account.png);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 60%;
+}
+
+.points_overall h2{
+  margin-top: 30px;
+}
+
+#first{
+  color: var(--mainColour);
+}
+
+.our_services{
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, auto);
+  justify-content:space-between;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 20px;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+#clothing_sales{
+  text-align: center;
+}
+
+#measure_sales{
+  text-align: center;
+}
+
+.headerColour .text *{
+  text-align: center;
+}
+#middle{
+  /* centre an element in a div vertically and horizontally
+  https://www.w3schools.com/howto/howto_css_center-vertical.asp*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.menu_icon{
+  display: none;
+}
+
+#services_title{
+  text-align: center;
+}
+
+@media screen and (max-width: 800px){
+
+
+  nav ul{
+    position: absolute;;
+    top: 70px;
+    left: 0;
+    background: #333;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  nav ul li{
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a{
+    color: white;
+  }
+
+  .menu_icon{
+    display: block;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+.cart_info p{
+  display: none;
+}
+}

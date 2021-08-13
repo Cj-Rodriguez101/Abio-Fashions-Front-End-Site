@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="services2.css">
+  <title>Services</title>
+</head>
+<body>
+  <div class="overallContainer">
+    <div class="navColour"></div>
+    <div class="container">
+        <div class="navBar">
+          <div class="logo">
+          <a href="index.html"><img src="images/abio fashions final logo.png" id="logoImage" alt=""></a>
+          </div>
+          <nav>
+            <ul id="MenuItem">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="collections.html">Collections</a></li>
+              <li><a href="services2.html">Services</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="sign_up.html">SIGN UP</a></li>
+              <li><p>|</p></li>
+              <li><a href="sign_up.html">SIGN IN</a></li>
+            </ul>
+          </nav>
+          <a href = "cart.html"><img src="images/shopping_cart.svg" id="cart" alt=""></a>
+          <img src="images/menu.svg" id="cart" alt="" class="menu_icon"
+           onclick="menuToggle()">
+        </div>
+        <div class="Welcome">
+          <div class="welcomeText">
+            <h3 id="first">WELCOME TO ABIO FASHIONS</h3>
+            <br>
+         <p id="second">We provide <span><strong>the best</strong></span> Nigeria Style all over the globe</p>
+         <br>
+         <p>
+            After Miss Abio graduated from the university of Ibadan Nigeria with
+             a BSc in library management and with her passion for dresses,
+              she went to start her small designing production shop in her locality</p>
+          </div>
+          <div class="pictureSection">
+            <img src="images/tailor.png" alt="">
+          </div>
+        </div>
+        <div class="choose_us">
+          <h3>Why Choose Us?</h3>
+        </div>
+
+        <div class="points_overall">
+          <div class="first_point"></div>
+          <div class="second_point"></div>
+          <div class="third_point"></div>
+          <p >Eco-Friendly Products</p>
+          <p >Budget Friendly</p>
+          <p >Verified Seller</p>
+        </div>
+
+        <div id="services_title">
+          <h3>Our Services</h3>
+        </div>
+        <div class="our_services">
+          <a href="collections.html"><img src="images/collection_services.png" alt=""></a>
+          <a href="booking2.html"><img src="images/measure_services.png" alt=""></a>
+          <h5 id="clothing_sales">Clothing Sales</h5>
+          <h5 id="measure_sales">Custom Bookings</h5>
+        </div>
+    </div>
+
+        <div class="headerColour">
+          <div class="text">
+            <h3>We are Certified Fashion Stylists</h3>
+            <h1>CLOTHING SERVICES</h1>
+            <h1>CREATIVE & PROFESSIONAL</h1>
+          </div>
+        </div>
+  </div>
+
+
+
+  <script type="text/javascript">
+    var menuItems = document.getElementById("MenuItem");
+
+    menuItems.style.maxHeight = "0px";
+
+    function menuToggle(){
+      if(menuItems.style.maxHeight == "0px"){
+        menuItems.style.maxHeight = "200px";
+      } else {
+        menuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+<footer id="site-info">
+  Copyright &copy; Winery
+  <a id = "credit" href="credits.html">Credit</a>
+</footer>
+</html>

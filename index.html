@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="home.css">
+  <title>Home</title>
+</head>
+<body>
+  <div class="overallContainer">
+    <div class="navColour"></div>
+    <div class="container">
+        <div class="navBar">
+          <div class="logo">
+            <a href="index.html"> <img src="images/abio fashions final logo.png"
+               id="logoImage" alt=""></a
+            <img src="images/abio fashions final logo.png" id="logoImage" alt="">
+          </div>
+          <nav>
+            <ul id="MenuItem">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="collections.html">Collections</a></li>
+              <li><a href="services2.html">Services</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="sign_up.html">SIGN UP</a></li>
+              <li><p>|</p></li>
+              <li><a href="sign_up.html">SIGN IN</a></li>
+            </ul>
+          </nav>
+          <a href = "cart.html"><img src="images/shopping_cart.svg" id="cart" alt=""></a>
+          <img src="images/menu.svg" id="cart" alt="" class="menu_icon"
+           onclick="menuToggle()">
+        </div>
+
+        <div class="row">
+          <div class ="text">
+            <h1>Welcome To Abio Fashions</h1>
+            <h3>__________</h3>
+            <p>Where You Meet The Best Nigerian Clothing Designs</p>
+            <a href="shop.html"><button type="button" url ="collection.html" name="shopButton">Shop Now</button></a>
+          </div>
+          <div class="pict">
+
+          </div>
+        </div>
+        <div class="row1"></div>
+    </div>
+    <div class="headerColour"></div>
+
+    <div class="discover">
+     <div class="divider"></div>
+     <p id="see">DISCOVER</p>
+     <p id="collections">THE COLLECTIONS</p>
+    </div>
+
+    <div class="pictureSegment">
+    <div class="row1">
+      <a href="collections.html"><img src="images/picture 3 front edited.png" alt=""></a>
+      <a href="collections.html"><img src="images/picture 2 front edited.png" alt=""></a>
+      <a href="collections.html"><img src="images/picture 4 front edited.png" alt=""></a>
+    </div>
+    </div>
+
+    <div class="discoverSmaller">
+      <p>Discover The Collections</p>
+      <hr id="line">
+    </div>
+
+    <div class="carouselContainer">
+      <div class="carouselSlide">
+
+
+        <div class="slide active">
+          <a href="collections.html"><img src="images/picture 3 front edited.png" alt=""></a>
+        </div>
+
+        <div class="slide">
+          <a href="collections.html"><img src="images/picture 2 front edited.png" alt=""></a>
+        </div>
+
+        <div class="slide">
+                <a href="collections.html"><img src="images/picture 4 front edited.png" alt=""></a>
+        </div>
+
+        <div class="scroll_navigation">
+          <div class="btn active"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerContainer">
+
+      <div class="footerRow">
+        <div class ="text">
+          <h1>Welcome To Abio Fashions</h1>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    var menuItems = document.getElementById("MenuItem");
+
+    menuItems.style.maxHeight = "0px";
+
+    function menuToggle(){
+      if(menuItems.style.maxHeight == "0px"){
+        menuItems.style.maxHeight = "200px";
+      } else {
+        menuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+  <script type="text/javascript">
+    var pictureSlides = document.querySelectorAll(".slide");
+    var btns = document.querySelectorAll(".btn");
+    let currentSlide = 1;
+
+    /*Manual navigation*/
+    var manualNav = function(manual){
+      pictureSlides.forEach((slide) => {
+        slide.classList.remove('active');
+      });
+
+      btns.forEach((btn) => {
+        btn.classList.remove('active');
+      });
+
+      pictureSlides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) =>{
+      btn.addEventListener("click",()=> {
+        manualNav(i);
+        currentSlide = 1;
+      });
+    });
+
+    /*Autoplay*/
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active');
+      let i = 1;
+
+      var repeater = () =>{
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+          pictureSlides[i].classList.add('active');
+          btns[i].classList.add('active');
+          i++;
+
+          if(pictureSlides.length == i){
+            i = 0;
+          }
+
+          if(i >= pictureSlides.length){
+            return;
+          }
+          repeater();
+        }, 5000);
+      }
+      repeater();
+    }
+    repeat();
+  </script>
+</body>
+<footer id="site-info">
+  Copyright &copy; Winery
+  <a id = "credit" href="credits.html">Credit</a>
+</footer>
+</html>

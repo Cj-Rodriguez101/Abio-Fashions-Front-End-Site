@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="about.css">
+  <title>Contact</title>
+</head>
+<body>
+  <div class="overallContainer">
+    <div class="navColour"></div>
+    <div class="container">
+        <div class="navBar">
+          <div class="logo">
+          <a href="index.html"><img src="images/abio fashions final logo.png" id="logoImage" alt=""></a>
+          </div>
+          <nav>
+            <ul id="MenuItem">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="services2.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sign_up.html">SIGN UP</a></li>
+                <li><p>|</p></li>
+                <li><a href="sign_up.html">SIGN IN</a></li>
+            </ul>
+          </nav>
+          <a href = "cart.html"><img src="images/shopping_cart.svg" id="cart" alt=""></a>
+          <img src="images/menu.svg" id="cart" alt="" class="menu_icon"
+           onclick="menuToggle()">
+        </div>
+
+        <div class="title">
+          <h2>Resources and References</h2>
+        </div>
+
+        <div class="CreditsDiv">
+          <p>Image Carousel - CodingSnow</p>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=bW8X-tt5AZQ">https://www.youtube.com/watch?v=bW8X-tt5AZQ</a></li>
+          </ul>
+
+          <p>Ecommerce Website - Easy Tutorials</p>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=yQimoqo0-7g&list=PLjwm_8O3suyM_2Lo9aAIw3HqjOPor8j9g">https://www.youtube.com/watch?v=yQimoqo0-7g&list=PLjwm_8O3suyM_2Lo9aAIw3HqjOPor8j9g</a></li>
+          </ul>
+
+          <p>Images - Adobe PhotoStock</p>
+          <ul>
+            <li><a href="https://stock.adobe.com/images/hot-african-beauty/95045088">https://stock.adobe.com/images/hot-african-beauty/95045088</a></li>
+            <li><a href="https://stock.adobe.com/images/african-american-woman-with-colorful-clothes-at-market/192635806">https://stock.adobe.com/images/african-american-woman-with-colorful-clothes-at-market/192635806</a></li>
+            <li><a href="https://stock.adobe.com/images/beautiful-african-american-woman-shopping-clothes-at-market/229439882">https://stock.adobe.com/images/beautiful-african-american-woman-shopping-clothes-at-market/229439882</a></li>
+            <li><a href="https://stock.adobe.com/images/fashion-african-woman-in-national-dress-holding-on-handrail-at-shopping-center-people-and-lifestyle-concept/180468382">https://stock.adobe.com/images/fashion-african-woman-in-national-dress-holding-on-handrail-at-shopping-center-people-and-lifestyle-concept/180468382</a></li>
+            <li><a href="https://stock.adobe.com/images/salvador-da-bahia-brazil-happy-brazilian-woman-of-african-descent-dressed-in-traditional-baiana-costumes/310755784?asset_id=310755853">https://stock.adobe.com/images/salvador-da-bahia-brazil-happy-brazilian-woman-of-african-descent-dressed-in-traditional-baiana-costumes/310755784?asset_id=310755853</a></li>
+            <li><a href="https://stock.adobe.com/images/african-american-fashion-model/49155160">https://stock.adobe.com/images/african-american-fashion-model/49155160</a></li>
+            <li><a href="https://stock.adobe.com/images/hot-african-beauty/177032172">https://stock.adobe.com/images/hot-african-beauty/177032172</a></li>
+          </ul>
+
+        </div>
+   </div>
+
+       <div class="headerColour">
+          <div class="text">
+            <h1>Credits</h1>
+            <p>Our Resources</p>
+         </div>
+      </div>
+ </div>
+
+
+  <script type="text/javascript">
+    var menuItems = document.getElementById("MenuItem");
+
+    menuItems.style.maxHeight = "0px";
+
+    function menuToggle(){
+      if(menuItems.style.maxHeight == "0px"){
+        menuItems.style.maxHeight = "200px";
+      } else {
+        menuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+</html>
